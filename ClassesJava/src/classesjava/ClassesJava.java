@@ -37,11 +37,18 @@ public class ClassesJava {
         System.out.println("La voiture "+v3.marque+" "+v3.modele+" de l'année "+v3.annee+" au prix de : "+v3.prix+" euros.");
         */
         
+        /**
         Voiture v1 = new Voiture("Peugeot", "208", 2021, 14500);
         Voiture v2 = new Voiture("Renault", "Clio", 2000, 3500);
         Voiture v3 = new Voiture("Toyota", "Yaris", 2015, 9800);
         System.out.println("La voiture "+v1.marque+" "+v1.modele+" de l'année "+v1.annee+" au prix de : "+v1.prix+" euros.");
         System.out.println("La voiture "+v2.marque+" "+v2.modele+" de l'année "+v2.annee+" au prix de : "+v2.prix+" euros.");
         System.out.println("La voiture "+v3.marque+" "+v3.modele+" de l'année "+v3.annee+" au prix de : "+v3.prix+" euros.");
+        */
+        
+        Pneus P1 = new Pneus(55,205,16,"été");
+        
+        Voiture v1 = new Voiture("Peugeot", "208", 2021, 14500, P1);
+        System.out.println("La voiture "+v1.marque+" "+v1.modele+" de l'année "+v1.annee+" au prix de : "+v1.prix+" euros. Possède comme pneus : "+v1.type_pneu.type);
     }
 }
