@@ -54,6 +54,12 @@ public class ClassesJava {
         */
         
         Voiture v1 = new Voiture("Peugeot", "208", 2021, 14500);
+        
+        /*
         System.out.println("Marque : "+v1.marque+"\nModèle : "+v1.modele+"\nAnnée : "+v1.annee+"\nPrix : "+v1.prix);
+        */
+        
+        v1.afficherDescription();
+      
     }
 }
