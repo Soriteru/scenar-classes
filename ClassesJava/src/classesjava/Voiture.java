@@ -24,9 +24,11 @@ public class Voiture {
         System.out.println("Prix : " + prix + " €");
     }
     
-    public void appliquerReduction10() {
-        this.prix = this.prix - (this.prix*(10F/100));
-    }
+    public void appliquerReduction(double pourcentage) {
+    double remise = this.prix * (pourcentage / 100.0);
+    this.prix = this.prix - remise;
+}
+
     public Voiture(String marque, String modele, int annee, double prix) {
         this.marque = marque;
         this.modele = modele;

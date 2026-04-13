@@ -61,7 +61,7 @@ public class ClassesJava {
         
         v1.afficherDescription();
         
-        v1.appliquerReduction10();
+        v1.appliquerReduction(40);
         
         v1.afficherDescription();
       
