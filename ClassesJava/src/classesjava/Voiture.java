@@ -22,12 +22,18 @@ public class Voiture {
         System.out.println("Modèle : " + modele);
         System.out.println("Année : " + annee);
         System.out.println("Prix : " + prix + " €");
+        System.out.println("Age du véhicule : "+calculAge());
     }
     
     public void appliquerReduction(double pourcentage) {
     double remise = this.prix * (pourcentage / 100.0);
     this.prix = this.prix - remise;
 }
+    
+    public int calculAge(){
+        int Age = 2026 - annee;
+        return(Age);
+    }
 
     public Voiture(String marque, String modele, int annee, double prix) {
         this.marque = marque;
